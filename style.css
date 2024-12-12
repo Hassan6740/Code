@@ -10,7 +10,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f5f5f5;
+    background: linear-gradient(45deg, #485563, #29323C);
+    /* Default login page gradient */
+    transition: background 0.3s ease-in-out;
+}
+
+.logo {
+    top: -70px;
+    left: -30px;
+    width: 270px;
+    position: absolute;
 }
 
 .container {
@@ -42,10 +51,16 @@ body {
     border-radius: 5px;
 }
 
-.container input:focus {
+#login-section input:focus {
     outline: none;
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#signup-section input:focus {
+    outline: none;
+    border-color: #30c722;
+    box-shadow: 0 0 5px rgba(33, 193, 18, 0.5);
 }
 
 .container a {
@@ -59,7 +74,7 @@ body {
     text-decoration: underline;
 }
 
-.container button {
+#login-section button {
     padding: 10px;
     font-size: 16px;
     background-color: #007bff;
@@ -70,8 +85,23 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.container button:hover {
+#signup-section button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #30c722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-section button:hover {
     background-color: #0056b3;
+}
+
+#signup-section button:hover {
+    background-color: #3d9e34;
 }
 
 .hidden {
@@ -89,12 +119,4 @@ body {
 
 .secondary-actions a:hover {
     color: #007bff;
-}
-
-.signup-container button {
-    background-color: #28a745;
-}
-
-.signup-container button:hover {
-    background-color: #218838;
 }
