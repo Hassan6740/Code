@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #0F2027, #203A43, #2C5364);
+    transition: background 0.3s ease-in-out;
+}
+
+.logo {
+    top: -70px;
+    left: -30px;
+    width: 270px;
+    position: absolute;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#login-section input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#signup-section input:focus {
+    outline: none;
+    border-color: #30c722;
+    box-shadow: 0 0 5px rgba(33, 193, 18, 0.5);
+}
+
+.container a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+#login-section button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#signup-section button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #30c722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-section button:hover {
+    background-color: #0056b3;
+}
+
+#signup-section button:hover {
+    background-color: #3d9e34;
+}
+
+.hidden {
+    display: none;
+}
+
+.secondary-actions {
+    margin-top: 20px;
+}
+
+.secondary-actions a {
+    display: block;
+    color: #555;
+}
+
+.secondary-actions a:hover {
+    color: #007bff;
+}

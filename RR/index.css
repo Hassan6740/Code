@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+/* Body Style */
+body {
+    background-color: #000000;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Background Image */
+.bgimg {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    filter: contrast(1.1);
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    top: -70px;
+    left: -30px;
+    width: 270px;
+    position: absolute;
+}
+
+/* Navigation Links */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    margin-left: 120px;
+    justify-content: center;
+    align-items: center;
+    gap: 75px; /* Adjust spacing between menu items */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 6px 10px;
+    transition: all 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ffd700; /* Highlight color on hover */
+}
+
+/* Authentication Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.login-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.login-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.signup-btn {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+}
+
+.signup-btn:hover {
+    background-color: #e6c300;
+}
+
+/* Hero Section */
+.hero-section {
+    position: absolute;
+    top: 40%;
+    left: 3.5%; /* Position the text closer to the left side */
+    text-align: left; /* Align text to the left */
+    z-index: 2;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-family: 'Poppins', sans-serif;
+}
